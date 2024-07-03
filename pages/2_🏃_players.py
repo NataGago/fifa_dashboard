@@ -14,7 +14,7 @@ club = st.sidebar.selectbox('Clube', clubes)
 df_players = df_data[(df_data['Club'] == club)]
 
 players = df_players['Name'].unique()
-player = st.sidebar.selectbox('Clube', players)
+player = st.sidebar.selectbox('Jogador', players)
 
 player_stats = df_data[df_data['Name'] == player].iloc[0]
 
